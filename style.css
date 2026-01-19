@@ -1,0 +1,524 @@
+/* GENERAL*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap');
+
+
+*{
+    margin : 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+P {
+   color: rgb(85,85,85);
+}
+
+/* TRANSITIONS */
+
+a, .btn {
+  transition:   all 300ms ease ;
+}
+
+/* DEKSTOP NAV */
+nav, .nav-links {
+    display: flex;
+}
+
+.logo {
+  font-family: "Sacramento" ;
+  font-style: italic ;
+  font-size: 3rem
+}
+
+.logo:hover {
+    cursor : default
+}
+
+nav {
+    justify-content:space-around ;
+    align-items: center ;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+a {
+ color: black;
+ text-decoration: none;
+ text-decoration-color: white;
+
+}
+
+a:hover {
+    color: navy;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width:100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+     position: absolute;
+     top: 100%;
+     right:  0 ;
+     background-color:  white;
+     width: fit-content;
+     max-height:  0;
+     overflow:  hidden;
+     transition:  all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display:block;
+    padding:10px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+    max-height:300px;
+
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px,5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity : 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:first-child {
+   opacity: 1;
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height:96vh;
+    margin:0 10 rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* HOME SECTION */
+
+#home {
+    display: flex ;
+    justify-content: center;
+    gap: 5rem;
+    height:70vh;
+    flex-direction: row-reverse;
+    padding: 0 6rem;
+}
+
+
+.section-pic-container {
+ display: flex;
+ justify-content: flex-end;
+ height: 500px;
+ width: 500px;
+ margin: auto 0;
+}
+
+.section-text {
+   align-self: center;
+   text-align: center;
+   margin-right: -1rem;
+}
+
+.section-text p {
+    font-weight: 600;
+}
+
+.section-text-p1 {
+   align-self: center;
+   justify-content: center;
+   display: flex;
+   font-size: 1rem;
+   margin-bottom: 0;
+   color:black;
+}
+
+.section-text-p2 {
+    font-size: 1.3rem;
+    color:black;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: navy;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: default;
+    height: 1.5rem;
+}
+
+.icon-git {
+    cursor: pointer;
+    height: 2rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.icon-git:hover {
+    filter: drop-shadow(0 0 6px rgb(0, 0, 128))
+            drop-shadow(0 0 12px rgb(0, 0, 128));
+    transform: scale(1);
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width : 9rem;
+    border-radius: 999rem;
+    line-height:1;
+    font-size: 0.95rem;
+}
+
+.btn-color-1,.btn-color-2 {
+    border: rgb(0, 0, 128) 1.5px solid;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
+}
+.btn-color-1, .btn-color-2:hover {
+   background: rgb(0,0,128);
+   color : white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0)
+}
+
+.btn-color-2 {
+    background: none
+}
+
+.btn-color-2:hover {
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem
+}
+
+/*ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.section-text-p1 {
+    font-weight: 600;
+}
+
+.about-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 10rem;
+    margin-top: 1rem;
+}
+.about-container {
+    gap:2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-details-container {
+    flex-direction: column;
+    text-align: left;
+    display: flex;
+}
+
+
+
+.arrow {
+    position: absolute;
+    right:5rem;
+    bottom:5rem;
+    cursor: pointer;
+    height: 2rem;
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    filter: drop-shadow(0 0 6px rgb(0, 0, 128))
+            drop-shadow(0 0 12px rgb(0, 0, 128));
+    transform: scale(1);
+}
+
+.about-container {
+    padding:1rem;
+    flex:1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(0, 0, 128) 0.1rem solid;
+    border-color: rgb(0,0,128);
+    text-align: center;
+}
+
+.about-container p {
+    color: navy;
+}
+
+.about-container h3 {
+    color: navy;
+}
+
+.text-container p {
+    display: flex;
+    color: black;
+}
+
+
+.section-container {
+    gap: 10rem;
+}
+
+.section-pic-container {
+    height:500px;
+    width:500px;
+    margin: auto 0
+}
+
+
+/* SKILLS SECTION */
+
+
+#skills {
+    position: relative;
+  
+}
+
+.skill-sub-title {
+    color: black;
+    font-weight: 600;
+    font-size: 1.75rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+
+}
+
+.skill-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0.1rem;
+
+}
+
+.article-container {
+    display: flex;
+    text-align: center;
+    flex-wrap:wrap;
+    flex-direction:row;
+    gap:2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap:0.5rem;
+}
+
+article .icon{
+    cursor:default;
+}
+
+.about-details-container-order {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 10rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0.01rem;
+   
+}
+
+.icon {
+   height: 1.7rem;
+   cursor: default;
+}
+
+.icon-new {
+   height: 2rem;
+   cursor: default;
+}
+
+
+
+
+/* PROJECTS SECTIONS */
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: (163,163,163);
+    background: white;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+    border: rgb(0, 0, 128) 0.1rem solid;
+    padding:1.5rem;
+    background: white;
+    border: rgb(0, 0, 128) 0.1rem solid;
+    border-color: rgb(0,0,128);
+    text-align: center;
+}
+
+.project-title {
+    margin:1rem;
+    color: navy;
+}
+
+.project-btn {
+    color: navy;
+    border-color:navy;
+}
+
+.project-sub-title {
+    color: navy;
+    font-weight: 600;
+    font-size: 1.75rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-up-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(0, 0, 128) 0.1rem solid;
+    border-color: navy;
+    background-color: (163,163,163);
+    background: (250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info p {
+    font-size: larger;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0.1rem;
+}
+
+footer p {
+    text-align: center;
+}

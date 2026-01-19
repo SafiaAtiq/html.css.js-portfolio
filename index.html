@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "mediaqueries.css">
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo">Safia Atiq </div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href= "#about">About</a></li>
+                <li><a href= "#skills">Skills</a></li>
+                <li><a href= "#projects">Projects</a></li>
+                <li><a href= "#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Safia Atiq</div>
+        <div class="hamburger-menu">
+             <div class="hamburger-icon" onclick= "toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href= "#about" onclick= "toggleMenu()">About</a></li>
+                <li><a href= "#skills" onclick= "toggleMenu()">Skills</a></li>
+                <li><a href= "#projects" onclick= "toggleMenu()">Projects</a></li>
+                <li><a href= "#contact" onclick= "toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="section-pic-container">
+            <img src ="./assests/profile-home.jpg" alt="Safia Atiq profile photo" />
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Safia Atiq</h1>
+            <p class="section-text-p2">Computer Science Student</p>
+            <div class="btn-container"> 
+                <button class="btn btn-color-2" onclick= "window.open('./assests/Safia CV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick= "location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assests/github logo.png"  alt="My Github Profile" class="icon-git" onclick="location.href='https://github.com/SafiaAtiq'"/>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt ="Arrow Icon" class="arrow" onclick="location.href='./#about'" />
+    </section>
+    <section id="about">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-section-container"> 
+          <div class="section-pic-container">
+            <img src="./assests/profile-about.jpg" alt="Profile Picture" class = "about-pic"/>
+          </div>
+          <div class="about-details-container">
+                <div class="about-container">
+                    <img src="./assests/education.png" alt="Experience icon" class="icon"/>
+                    <h3>Education</h3>
+                     <p> S.S.C in Science (90.9%) <br/>H.S.S.C-I in ICS (89.9%)</p>
+                </div>
+                <div class = "text-container">
+                    <p> I am Safia Atiq, a passionate student studying Computer Science with a strong interest 
+                        in real-time physics simulations, game development, and interactive software programming. 
+                        I enjoy bringing imaginative and impossible systems into reality. I am curious 
+                        and ambitious, with a balance of analytical thinking and the ability to take initiative 
+                        to bring my ideas to life. I work best at solving problems through logic and design.
+                         I value clarity and consistency in the execution of my plans. I aim to study Computer 
+                         Science for my Bachelor's degree to make my long-term dream of becoming a game 
+                         physicist true someone who thinks, explains and brings reality into virtual systems.
+                    </p>
+                </div>
+            </div>
+         </div>
+         <img src="./assests/arrow.png" alt ="Arrow Icon" class="arrow" onclick="location.href='./#skills'" />
+    </section>
+    <section id="skills">
+        <p class="section-text-p1">Time To See</p>
+        <h1 class="title">My Skills</h1>
+        <div class="skill-details-container">
+            <div class="about-details-container-order">
+                <div class="about-container">
+                      <h2 class="skill-sub-title">Hard Skills</h2>
+                      <div class="article-container">
+                        <article>
+                            <img src="assests/codingskills.png" alt="Skills" class="icon-new"  />
+                            <div>
+                                <h3>HTML</h3>
+                                <p >Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assests/codingskills.png" alt="Skills" class="icon-new"  />
+                            <div>
+                                <h3>C++</h3>
+                                <span>
+                                <p >Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assests/codingskills.png" alt="Skills" class="icon-new"  />
+                            <div>
+                                <h3>Python</h3>
+                                <p >Foundational</p>
+                            </div>
+                        </article> 
+                        <article>
+                            <img src="assests/codingskills.png" alt="Skills" class="icon-new" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p >Applied</p>
+                            </div>
+                        </article>
+                      </div>                    
+                </div>
+                <div class="about-container">
+                      <h2 class="skill-sub-title">Soft Skills</h2>
+                      <div class="article-container">
+                        <article>
+                            <img src="assests/checkmark.png" alt="Skills" class="icon"  />
+                            <div>
+                                <h3>Analytical Thinking</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assests/checkmark.png" alt="Skills" class="icon" />
+                            <div>
+                                <h3>Problem-Solving</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assests/checkmark.png" alt="Skills" class="icon"/>
+                            <div>
+                                <h3>Interpersonal <br> skills</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assests/checkmark.png" alt="Skills" class="icon"  />
+                            <div>
+                                <h3>Discipline & Work Ethic</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assests/checkmark.png" alt="Skills" class="icon" />
+                            <div>
+                                <h3>Self-Driven</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assests/checkmark.png" alt="Skills" class="icon"/>
+                            <div>
+                                <h3>Innovative Thinking</h3>
+                            </div>
+                        </article>
+                      </div>                    
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt ="Arrow Icon" class="arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section-text-p1">Turning Vision Into</p>
+        <h1 class="title"> Projects & Leadership</h1>
+        <div class="skill-details-container">
+            <div class="about-details-container-order">
+                <div class="about-container color-container">
+                <div class="article-container">
+                    <img src="./assests/AquaMate.png" alt="Prototype Project" class="project-img"/>
+                </div>
+                <h2 class="project-sub-title project title">Prototype</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick= "window.open('./assests/Autonomous-System-Prototype.pdf')">
+                        View Prototype PDF
+                    </button>
+                </div>
+                </div>
+                <div class="about-container color-container">
+                <div class="article-container">
+                    <img src="./assests/Portfolio.png" alt="Portfolio Project" class="project-img"/>
+                </div>
+                <h2 class="project-sub-title project title">Portfolio</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SafiaAtiq/html.css.js-portfolio'" >
+                        View Source Code
+                    </button>
+                </div>
+                </div>
+                <div class="about-container color-container">
+                <div class="article-container">
+                    <img src="./assests/Model United Nations conference banner.png" alt="Leadership Project" class="project-img"/>
+                </div>
+                <h2 class="project-sub-title project title">Debate</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick= "window.open('./assests/Safia Debating Experience.pdf')">
+                        View Debate PDF
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt ="Arrow Icon" class="arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+       <p class="section-text-p1">Get in  Touch</p>
+       <h1 class="title">Contact Me</h1>
+       <div class="contact-info-up-container">
+        <div class="contact-info">
+            <img src="./assests/email.png" alt="Email icon" class="icon"  />
+            <p><a href="mailto:safia.attiquee@gmail.com">safia.attiquee@gmail.com</a></p>
+        </div>
+       </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class = "nav-links">
+                     <li><a href= "#about">About</a></li>
+                     <li><a href= "#skills">Skills</a></li>
+                      <li><a href= "#projects">Projects</a></li>
+                      <li><a href= "#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Safia Atiq. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
