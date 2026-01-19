@@ -20,5 +20,7 @@ Divided into:
 ## How to View
 
 1. Clone this repository:
-   git clone [Safia Portfolio](https://github.com/SafiaAtiq/html.css.js-portfolio.git)
+   git clone: [Git Clone](https://github.com/SafiaAtiq/html.css.js-portfolio.git)
 2. Open `index.html` in your web browser.
+3. You can view my live portfolio here:[Safia's Portfolio](https://safiaselfcodedportfolio.netlify.app/)
+
